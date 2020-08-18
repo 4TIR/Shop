@@ -1,0 +1,26 @@
+﻿@model Car
+<style>
+    .gallery5 {
+        overflow: hidden;
+        width: 480px;
+    }
+
+        .gallery5 .ramka {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .gallery5 img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+</style>
+<div class="gallery5 ">
+    <img class="ramka" src="@Model.img" alt="@Model.name" />
+    <h2> @Model.name</h2>
+    <p>@Model.shortDesc</p>
+    <p>Price : @Model.price.ToString("c")</p>
+    <p><a class="btn btn-warning" asp-controller="ShopCart" asp-action="addToCart" asp-route-id="@Model.id">Add to ShopCart</a></p>
+</div>

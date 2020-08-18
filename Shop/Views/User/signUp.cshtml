@@ -1,0 +1,59 @@
+﻿@model User
+    <style>
+        .center {
+            height: 30em;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        h1.blocktext {
+            margin-left: auto;
+            margin-right: auto;
+            width: 3em
+        }
+
+        .b1 {
+            background: navy;
+            color: white;
+            font-size: 9pt;
+        }
+    </style>
+<h1 class="blocktext">SignUp</h1>
+<div class="center">
+    <form asp-action="signUp" metchod="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="FirstName">
+            </label>
+            <div class="col-nd-5">
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="LastName">
+            </label>
+            <div class="col-nd-5">
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email">
+            </label>
+            <div class="col-nd-5">
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password">
+            </label>
+            <div class="col-nd-5">
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+        <input class="btn btn-danger mb-5" type="submit" value="Sign Up" />
+    </form>
+</div>

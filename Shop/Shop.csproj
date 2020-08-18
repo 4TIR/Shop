@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200707100715_initial.cs" />
+    <Compile Remove="Migrations\20200707100715_initial.Designer.cs" />
+    <Compile Remove="Migrations\20200814083314_User.cs" />
+    <Compile Remove="Migrations\20200814083314_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814083734_User.cs" />
+    <Compile Remove="Migrations\20200814083734_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814084104_User.cs" />
+    <Compile Remove="Migrations\20200814084104_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814084441_User.cs" />
+    <Compile Remove="Migrations\20200814084441_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814085119_User.cs" />
+    <Compile Remove="Migrations\20200814085119_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814085539_User.cs" />
+    <Compile Remove="Migrations\20200814085539_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814085823_User.cs" />
+    <Compile Remove="Migrations\20200814085823_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814100306_user.cs" />
+    <Compile Remove="Migrations\20200814100306_user.Designer.cs" />
+    <Compile Remove="Migrations\20200814161511_User.cs" />
+    <Compile Remove="Migrations\20200814161511_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814162318_User.cs" />
+    <Compile Remove="Migrations\20200814162318_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814162949_User.cs" />
+    <Compile Remove="Migrations\20200814162949_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814163247_User.cs" />
+    <Compile Remove="Migrations\20200814163247_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814163301_User.cs" />
+    <Compile Remove="Migrations\20200814163301_User.Designer.cs" />
+    <Compile Remove="Migrations\20200814163748_Users.cs" />
+    <Compile Remove="Migrations\20200814163748_Users.Designer.cs" />
+    <Compile Remove="Migrations\20200814181356_Users.cs" />
+    <Compile Remove="Migrations\20200814181356_Users.Designer.cs" />
+    <Compile Remove="Migrations\20200814181643_Users.cs" />
+    <Compile Remove="Migrations\20200814181643_Users.Designer.cs" />
+    <Compile Remove="Migrations\20200814182052_Users.cs" />
+    <Compile Remove="Migrations\20200814182052_Users.Designer.cs" />
+    <Compile Remove="Migrations\20200814182252_Users.cs" />
+    <Compile Remove="Migrations\20200814182252_Users.Designer.cs" />
+    <Compile Remove="Migrations\20200814182829_Users.cs" />
+    <Compile Remove="Migrations\20200814182829_Users.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JSON" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.1.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+</Project>
